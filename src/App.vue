@@ -2,6 +2,9 @@
 import Sidebar from './components/Sidebar.vue'
 import Navigation from './components/Navigation.vue'
 import Player from './components/Player.vue'
+
+import engine from './data/engine'
+engine.initialize()
 </script>
 
 <template>

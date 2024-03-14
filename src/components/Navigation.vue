@@ -1,11 +1,11 @@
 <script setup>
-
+import course from "../data/data"
 </script>
 
 <template>
   <div class="navigation bg-gray-900 h-[var(--nav-height)] flex justify-between items-center sticky top-0 z-10">
     <div class="px-2 text-xl text-white w-[var(--sidebar-width)] flex justify-between">
-      <span class="text-lg text-gray-400">Mastering Vue.js</span>
+      <span class="text-lg text-gray-400">{{ course.title }}</span>
     </div>
     <div class="pr-5 text-base text-white w-[calc(100%-var(--sidebar-width))] flex justify justify-between items-center">
       <div class="sm:invisible lg:visible">
@@ -20,6 +20,7 @@
     </div>
   </div>
 </template>
+
 
 <style scoped>
 </style>
